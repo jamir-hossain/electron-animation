@@ -1,4 +1,4 @@
-document.querySelectorAll('.wpdev-planet-icon').forEach(element => {
+document.querySelectorAll('.planet-icon').forEach(element => {
     // console.log(element)
     element.addEventListener('mouseenter', () => {
         element.style = "animation-play-state: paused;"
