@@ -1,0 +1,17 @@
+@media screen and (max-width: 1440px) {
+	.wpdev-galaxy {
+		height: 750px;
+	}
+	.wpdev-solar-orbit-1 {
+		width: 1550px;
+		height: 165%;
+	}
+	.wpdev-solar-orbit-2 {
+		width: 1430px;
+		height: 165%;
+	}
+	.wpdev-solar-orbit-3 {
+		width: 1300px;
+		height: 162%;
+	}
+}

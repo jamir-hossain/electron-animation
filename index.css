@@ -1,25 +1,20 @@
 .wpdev-galaxy {
 	float: left;
 	width: 100%;
-	height: 850px;
+	height: 800px;
 	overflow: hidden;
 	position: relative;
 }
 .wpdev-solar-system {
 	position: relative;
-	top: 0;
-	left: 0;
-	width: 1600px;
+	max-width: 1440px;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-}
-.wpdev-hero-banner-content {
-	text-align: center;
-	padding-bottom: 120px;
-	z-index: 2;
+	overflow: hidden;
 }
 .wpdev-hero-banner-content h1 {
 	color: #fff;
@@ -37,69 +32,42 @@
 	line-height: 1.4;
 	font-family: "Poppins", Sans-serif;
 }
-.wpdev-hero-buttons {
-	margin: 60px auto 20px;
-}
-a.wpdev-hero-btn, a.wpdev-hero-btn:focus, a.wpdev-hero-btn:visited {
-	color: #fff;
-}
-.wpdev-hero-btn {
-	background-size: 150% auto;
-	flex: 1 1 auto;
-	margin: 10px;
-	padding: 20px 40px;
-	text-align: center;
-	color: #fff;
-	border-radius: 80px;
-	transition: 0.5s;
-	text-decoration: none;
-	font-size: 17px;
-}
-.wpdev-hero-btn:hover {
-    color: #fff;
-  background-position: right center; /* change the direction of the change here */
-}
-.wpdev-hero-btn-1 {
-  background-image: linear-gradient(to right, #007ddc 0%, #00bbfc 100%);
-}
-.wpdev-hero-btn-2 {
-  background-image: linear-gradient(to right, #ec008c 0%, #f25eb5 100%);
-}
+
 .wpdev-solar-orbit-1 {
-	width: 100%;
+	width: 1600px;
 	height: 165%;
 	border-radius: 100%;
 	z-index: 100;
 	position: absolute;
-	top: 18%;
-	left: 0;
-	margin: 0;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,-50%)!important;
 	border: solid 1px rgba(255, 255, 255, 0.1);
 	z-index: 1;
 }
 .wpdev-solar-orbit-2 {
-	width: 88%;
-	height: 146%;
+	width: 1480px;
+	height: 165%;
 	border-radius: 100%;
 	z-index: 100;
 	position: absolute;
-	top: 29%;
-	left: 6%;
-	margin: 0;
+	top: 111%;
+	left: 50%;
+	transform: translate(-50%,-50%)!important;
 	border: solid 1px rgba(255, 255, 255, 0.1);
 	z-index: 1;
 }
 .wpdev-solar-orbit-3 {
-	width: 73%;
-	height: 121%;
-	border-radius: 100%;
-	z-index: 100;
-	position: absolute;
-	top: 40%;
-	left: 13%;
-	margin: 0;
-	border: solid 1px rgba(255, 255, 255, 0.1);
-	z-index: 1;
+    width: 1340px;
+    height: 165%;
+    border-radius: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 121%;
+	left: 50%;
+	transform: translate(-50%,-50%)!important;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    z-index: 1;
 }
 .wpdev-planet-icon {
 	opacity: 0.8;
@@ -115,125 +83,94 @@ a.wpdev-hero-btn, a.wpdev-hero-btn:focus, a.wpdev-hero-btn:visited {
 .wpdev-planet-icon:hover{
     opacity: 1;
 }
+
+/* planet-icons start for orbit 1 */
 @-webkit-keyframes wpdev-planet-icon-1 {
 	from {
-		-webkit-transform: rotate(-70deg) translateY(-840px) rotate(70deg);
+		-webkit-transform: rotate(-56deg) translateY(-880px) rotate(56deg);
 	}
 	to {
-		-webkit-transform: rotate(83deg) translateY(-765px) rotate(-83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-1 {
-	from {
-		transform: rotate(-70deg) translateY(-840px) rotate(70deg);
-	}
-	to {
-		transform: rotate(83deg) translateY(-765px) rotate(-83deg);
+		-webkit-transform: rotate(56deg) translateY(-830px) rotate(-56deg);
 	}
 }
 .wpdev-planet-icon-1 {
 	position: absolute;
-	top: 790px;
+	top: 830px;
 	left: 50%;
 	margin: -14px 0 0;
 	-webkit-animation: wpdev-planet-icon-1 40s infinite linear alternate;
 	animation: wpdev-planet-icon-1 40s infinite linear alternate;
 	z-index: 200;
 }
-@-webkit-keyframes wpdev-planet-icon-4 {
-	from {
-		-webkit-transform: rotate(-30deg) translateY(-840px) rotate(30deg);
-	}
-	to {
-		-webkit-transform: rotate(83deg) translateY(-600px) rotate(-83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-4 {
-	from {
-		transform: rotate(-30deg) translateY(-840px) rotate(30deg);
-	}
-	to {
-		transform: rotate(83deg) translateY(-600px) rotate(-83deg);
-	}
-}
-.wpdev-planet-icon-4 {
-	position: absolute;
-	top: 772px;
-	left: 56%;
-	margin: -5px 0 0;
-	-webkit-animation: wpdev-planet-icon-4 40s infinite linear alternate;
-	animation: wpdev-planet-icon-4 40s infinite linear alternate;
-	z-index: 200;
-}
+
 @-webkit-keyframes wpdev-planet-icon-2 {
 	from {
-		-webkit-transform: rotate(20deg) translateY(-770px) rotate(-20deg);
+		-webkit-transform: rotate(20deg) translateY(-820px) rotate(-20deg);
 	}
 	to {
-		-webkit-transform: rotate(-83deg) translateY(-850px) rotate(83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-2 {
-	from {
-		transform: rotate(20deg) translateY(-770px) rotate(-20deg);
-	}
-	to {
-		transform: rotate(-83deg) translateY(-850px) rotate(83deg);
+		-webkit-transform: rotate(-50deg) translateY(-870px) rotate(50deg);
 	}
 }
 .wpdev-planet-icon-2 {
 	position: absolute;
-	top: 760px;
+	top: 800px;
 	left: 50%;
 	margin: 0 0 0;
 	-webkit-animation: wpdev-planet-icon-2 40s infinite linear alternate;
 	animation: wpdev-planet-icon-2 40s infinite linear alternate;
 	z-index: 200;
 }
+
 @-webkit-keyframes wpdev-planet-icon-3 {
 	from {
-		-webkit-transform: rotate(70deg) translateY(-770px) rotate(-70deg);
+		-webkit-transform: rotate(50deg) translateY(-830px) rotate(-50deg);
 	}
 	to {
-		-webkit-transform: rotate(-83deg) translateY(-820px) rotate(83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-3 {
-	from {
-		transform: rotate(70deg) translateY(-800px) rotate(-70deg);
-	}
-	to {
-		transform: rotate(-83deg) translateY(-820px) rotate(83deg);
+		-webkit-transform: rotate(-20deg) translateY(-850px) rotate(20deg);
 	}
 }
 .wpdev-planet-icon-3 {
 	position: absolute;
-	top: 755px;
+	top: 810px;
 	left: 50%;
 	margin: 0 0 0;
 	-webkit-animation: wpdev-planet-icon-3 40s infinite linear alternate;
 	animation: wpdev-planet-icon-3 40s infinite linear alternate;
 	z-index: 200;
 }
-@-webkit-keyframes wpdev-planet-icon-5 {
+/* planet-icons end for orbit 1 */
+
+
+/* planet-icons start for orbit 2 */
+@-webkit-keyframes wpdev-planet-icon-4 {
 	from {
-		-webkit-transform: rotate(40deg) translateY(-690px) rotate(-40deg);
+		-webkit-transform: rotate(-30deg) translateY(-860px) rotate(30deg);
 	}
 	to {
-		-webkit-transform: rotate(-80deg) translateY(-720px) rotate(80deg);
+		-webkit-transform: rotate(58deg) translateY(-680px) rotate(-58deg);
 	}
 }
-@-keyframes wpdev-planet-icon-5 {
+.wpdev-planet-icon-4 {
+	position: absolute;
+	top: 780px;
+	left: 56%;
+	margin: -5px 0 0;
+	-webkit-animation: wpdev-planet-icon-4 40s infinite linear alternate;
+	animation: wpdev-planet-icon-4 40s infinite linear alternate;
+	z-index: 200;
+}
+
+@-webkit-keyframes wpdev-planet-icon-5 {
 	from {
-		transform: rotate(40deg) translateY(-690px) rotate(-40deg);
+		-webkit-transform: rotate(40deg) translateY(-730px) rotate(-40deg);
 	}
 	to {
-		transform: rotate(-80deg) translateY(-720px) rotate(80deg);
+		-webkit-transform: rotate(-58deg) translateY(-780px) rotate(58deg);
 	}
 }
 .wpdev-planet-icon-5 {
 	position: absolute;
-	top: 680px;
+	top: 726px;
 	left: 50%;
 	margin: -14px 0 0;
 	-webkit-animation: wpdev-planet-icon-5 50s infinite linear alternate;
@@ -243,73 +180,54 @@ a.wpdev-hero-btn, a.wpdev-hero-btn:focus, a.wpdev-hero-btn:visited {
 
 @-webkit-keyframes wpdev-planet-icon-6 {
 	from {
-		-webkit-transform: rotate(-30deg) translateY(-520px) rotate(30deg);
+		-webkit-transform: rotate(-56deg) translateY(-560px) rotate(56deg);
 	}
 	to {
-		-webkit-transform: rotate(83deg) translateY(-940px) rotate(-83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-6 {
-	from {
-		transform: rotate(-30deg) translateY(-840px) rotate(30deg);
-	}
-	to {
-		transform: rotate(83deg) translateY(-600px) rotate(-83deg);
+		-webkit-transform: rotate(56deg) translateY(-990px) rotate(-56deg);
 	}
 }
 .wpdev-planet-icon-6 {
 	position: absolute;
-	top: 628px;
+	top: 780px;
 	left: 32%;
 	margin: -5px 0 0;
 	-webkit-animation: wpdev-planet-icon-6 40s infinite linear alternate;
 	animation: wpdev-planet-icon-6 40s infinite linear alternate;
 	z-index: 200;
 }
+/* planet-icons end for orbit 2 */
+
+
+/* planet-icons start for orbit 3 */
 @-webkit-keyframes wpdev-planet-icon-7 {
 	from {
-		-webkit-transform: rotate(-83deg) translateY(-625px) rotate(83deg);
+		-webkit-transform: rotate(-74deg) translateY(-680px) rotate(74deg);
 	}
 	to {
-		-webkit-transform: rotate(83deg) translateY(-555px) rotate(-83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-7 {
-	from {
-		transform: rotate(-83deg) translateY(-625px) rotate(83deg);
-	}
-	to {
-		transform: rotate(83deg) translateY(-555px) rotate(-83deg);
+		-webkit-transform: rotate(74deg) translateY(-620px) rotate(-74deg);
 	}
 }
 .wpdev-planet-icon-7 {
 	position: absolute;
-	top: 585px;
+	top: 630px;
 	left: 50%;
 	margin: -14px 0 0;
 	-webkit-animation: wpdev-planet-icon-7 60s infinite linear alternate;
 	animation: wpdev-planet-icon-7 60s infinite linear alternate;
 	z-index: 200;
 }
+
 @-webkit-keyframes wpdev-planet-icon-8 {
 	from {
-		-webkit-transform: rotate(-60deg) translateY(-625px) rotate(60deg);
+		-webkit-transform: rotate(-60deg) translateY(-700px) rotate(60deg);
 	}
 	to {
-		-webkit-transform: rotate(83deg) translateY(-575px) rotate(-83deg);
-	}
-}
-@-keyframes wpdev-planet-icon-8 {
-	from {
-		transform: rotate(-60deg) translateY(-625px) rotate(60deg);
-	}
-	to {
-		transform: rotate(83deg) translateY(-575px) rotate(-83deg);
+		-webkit-transform: rotate(68deg) translateY(-640px) rotate(-68deg);
 	}
 }
 .wpdev-planet-icon-8 {
 	position: absolute;
-	top: 595px;
+	top: 660px;
 	left: 50%;
 	margin: -14px 0 0;
 	-webkit-animation: wpdev-planet-icon-8 30s infinite linear alternate;
@@ -319,539 +237,25 @@ a.wpdev-hero-btn, a.wpdev-hero-btn:focus, a.wpdev-hero-btn:visited {
 
 @-webkit-keyframes wpdev-planet-icon-9 {
 	from {
-		-webkit-transform: rotate(70deg) translateY(-580px) rotate(-70deg);
+		-webkit-transform: rotate(70deg) translateY(-640px) rotate(-70deg);
 	}
 	to {
-		-webkit-transform: rotate(-84deg) translateY(-635px) rotate(84deg);
-	}
-}
-@-keyframes wpdev-planet-icon-9 {
-	from {
-		transform: rotate(70deg) translateY(-600px) rotate(-70deg);
-	}
-	to {
-		transform: rotate(-84deg) translateY(-635px) rotate(84deg);
+		-webkit-transform: rotate(-70deg) translateY(-700px) rotate(70deg);
 	}
 }
 .wpdev-planet-icon-9 {
 	position: absolute;
-	top: 590px;
+	top: 660px;
 	left: 50%;
 	margin: -14px 0 0;
 	-webkit-animation: wpdev-planet-icon-9 70s infinite linear alternate;
 	animation: wpdev-planet-icon-9 70s infinite linear alternate;
 	z-index: 200;
 }
-@media screen and (min-width: 1921px) {
-	.wpdev-galaxy {
-		height: 970px;
-	}
+/* planet-icons end for orbit 3 */
 
-	@-webkit-keyframes wpdev-planet-icon-1 {
-		from {
-			-webkit-transform: rotate(-70deg) translateY(-800px) rotate(70deg);
-		}
-		to {
-			-webkit-transform: rotate(84deg) translateY(-820px) rotate(-84deg);
-		}
-	}
 
-	@-keyframes wpdev-planet-icon-1 {
-		from {
-			transform: rotate(70deg) translateY(-800px) rotate(-70deg);
-		}
-		to {
-			transform: rotate(-84deg) translateY(-840px) rotate(84deg);
-		}
-	}
-	.wpdev-planet-icon-1 {
-		left: 48%;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-3 {
-		from {
-			-webkit-transform: rotate(70deg) translateY(-750px) rotate(-70deg);
-		}
-		to {
-			-webkit-transform: rotate(-83deg) translateY(-850px) rotate(83deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-3 {
-		from {
-			transform: rotate(70deg) translateY(-750) px rotate(-70deg);
-		}
-		to {
-			transform: rotate(-83deg) translateY(-850px) rotate(83deg);
-		}
-	}
-	.wpdev-planet-icon-3 {
-		top: 768px;
-		left: 52%;
-	}
-}
-@media screen and (max-width: 1600px) {
-	.wpdev-galaxy {
-		height: 700px;
-	}
-	.wpdev-hero-banner-content {
-		padding-bottom: 40px;
-	}
-	.wpdev-hero-banner-content h1 {
-		font-size: 42px;
-	}
-	.wpdev-hero-banner-content p {
-		font-size: 18px;
-	}
-	.wpdev-hero-btn {
-		padding: 15px 30px;
-		font-size: 16px;
-	}
-	.wpdev-hero-buttons {
-		margin: 50px auto 15px;
-	}
-	.wpdev-solar-system {
-		width: 1400px;
-	}
-	.wpdev-solar-orbit-1 {
-		height: 190%;
-		top: 19%;
-	}
-	.wpdev-solar-orbit-2 {
-		width: 88%;
-		height: 177%;
-		top: 32%;
-		left: 6%;
-	}
-	.wpdev-solar-orbit-3 {
-		width: 74%;
-		top: 46%;
-		left: 13%;
-		height: 148%;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-1 {
-		from {
-			-webkit-transform: rotate(-60deg) translateY(-770px) rotate(60deg);
-		}
-		to {
-			-webkit-transform: rotate(70deg) translateY(-700px) rotate(-70deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-1 {
-		from {
-			transform: rotate(-60deg) translateY(-770px) rotate(60deg);
-		}
-		to {
-			transform: rotate(70deg) translateY(-700px) rotate(-70deg);
-		}
-	}
-	.wpdev-planet-icon-1 {
-		top: 735px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-4 {
-		from {
-			-webkit-transform: rotate(-30deg) translateY(-775px) rotate(30deg);
-		}
-		to {
-			-webkit-transform: rotate(70deg) translateY(-565px) rotate(-70deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-4 {
-		from {
-			transform: rotate(-30deg) translateY(-775px) rotate(30deg);
-		}
-		to {
-			transform: rotate(70deg) translateY(-565px) rotate(-70deg);
-		}
-	}
-	.wpdev-planet-icon-4 {
-		top: 700px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-2 {
-		from {
-			-webkit-transform: rotate(10deg) translateY(-730px) rotate(-10deg);
-		}
-		to {
-			-webkit-transform: rotate(-70deg) translateY(-745px) rotate(70deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-2 {
-		from {
-			transform: rotate(10deg) translateY(-730px) rotate(-10deg);
-		}
-		to {
-			transform: rotate(-70deg) translateY(-745px) rotate(70deg);
-		}
-	}
-	.wpdev-planet-icon-2 {
-		top: 688px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-3 {
-		from {
-			-webkit-transform: rotate(50deg) translateY(-730px) rotate(-50deg);
-		}
-		to {
-			-webkit-transform: rotate(-70deg) translateY(-755px) rotate(70deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-3 {
-		from {
-			transform: rotate(50deg) translateY(-730px) rotate(-50deg);
-		}
-		to {
-			transform: rotate(-70deg) translateY(-755px) rotate(70deg);
-		}
-	}
-	.wpdev-planet-icon-3 {
-		top: 710px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-5 {
-		from {
-			-webkit-transform: rotate(40deg) translateY(-640px) rotate(-40deg);
-		}
-		to {
-			-webkit-transform: rotate(-68deg) translateY(-670px) rotate(68deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-5 {
-		from {
-			transform: rotate(40deg) translateY(-640px) rotate(-40deg);
-		}
-		to {
-			transform: rotate(-68deg) translateY(-670px) rotate(68deg);
-		}
-	}
-	.wpdev-planet-icon-5 {
-		top: 630px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-7 {
-		from {
-			-webkit-transform: rotate(-50deg) translateY(-585px) rotate(50deg);
-		}
-		to {
-			-webkit-transform: rotate(57deg) translateY(-550px) rotate(-57deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-7 {
-		from {
-			transform: rotate(-50deg) translateY(-585px) rotate(50deg);
-		}
-		to {
-			transform: rotate(58deg) translateY(-550px) rotate(-58deg);
-		}
-	}
-
-	.wpdev-planet-icon-7 {
-		top: 555px;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-6 {
-		from {
-			-webkit-transform: rotate(-30deg) translateY(-520px) rotate(30deg);
-		}
-		to {
-			-webkit-transform: rotate(83deg) translateY(-780px) rotate(-83deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-6 {
-		from {
-			transform: rotate(-30deg) translateY(-840px) rotate(30deg);
-		}
-		to {
-			transform: rotate(83deg) translateY(-600px) rotate(-83deg);
-		}
-	}
-
-	.wpdev-planet-icon-6 {
-		top: 573px;
-		left: 36%;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-8 {
-		from {
-			-webkit-transform: rotate(-30deg) translateY(-585px) rotate(30deg);
-		}
-		to {
-			-webkit-transform: rotate(58deg) translateY(-550px) rotate(-58deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-8 {
-		from {
-			transform: rotate(-30deg) translateY(-585px) rotate(30deg);
-		}
-		to {
-			transform: rotate(57deg) translateY(-550px) rotate(-57deg);
-		}
-	}
-	.wpdev-planet-icon-8 {
-		top: 555px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-9 {
-		from {
-			-webkit-transform: rotate(50deg) translateY(-540px) rotate(-50deg);
-		}
-		to {
-			-webkit-transform: rotate(-60deg) translateY(-570px) rotate(60deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-9 {
-		from {
-			transform: rotate(50deg) translateY(-540px) rotate(-50deg);
-		}
-		to {
-			transform: rotate(-60deg) translateY(-570px) rotate(60deg);
-		}
-	}
-	.wpdev-planet-icon-9 {
-		top: 530px;
-	}
-}
-@media screen and (max-width: 1400px) {
-	.wpdev-galaxy {
-		height: 700px;
-	}
-	.wpdev-solar-system {
-		width: 1200px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-1 {
-		from {
-			-webkit-transform: rotate(-60deg) translateY(-630px) rotate(60deg);
-		}
-		to {
-			-webkit-transform: rotate(76deg) translateY(-570px) rotate(-76deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-1 {
-		from {
-			transform: rotate(-60deg) translateY(-630px) rotate(60deg);
-		}
-		to {
-			transform: rotate(76deg) translateY(-570px) rotate(-76deg);
-		}
-	}
-	.wpdev-planet-icon-1 {
-		top: 600px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-4 {
-		from {
-			-webkit-transform: rotate(-20deg) translateY(-630px) rotate(20deg);
-		}
-		to {
-			-webkit-transform: rotate(76deg) translateY(-450px) rotate(-76deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-4 {
-		from {
-			transform: rotate(-20deg) translateY(-630px) rotate(20deg);
-		}
-		to {
-			transform: rotate(76deg) translateY(-450px) rotate(-76deg);
-		}
-	}
-	.wpdev-planet-icon-4 {
-		top: 590px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-2 {
-		from {
-			-webkit-transform: rotate(20deg) translateY(-610px) rotate(-20deg);
-		}
-		to {
-			-webkit-transform: rotate(-78deg) translateY(-620px) rotate(78deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-2 {
-		from {
-			transform: rotate(20deg) translateY(-610px) rotate(-20deg);
-		}
-		to {
-			transform: rotate(-78deg) translateY(-620px) rotate(78deg);
-		}
-	}
-	.wpdev-planet-icon-2 {
-		top: 586px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-3 {
-		from {
-			-webkit-transform: rotate(60deg) translateY(-600px) rotate(-60deg);
-		}
-		to {
-			-webkit-transform: rotate(-78deg) translateY(-620px) rotate(78deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-3 {
-		from {
-			transform: rotate(60deg) translateY(-600px) rotate(-60deg);
-		}
-		to {
-			transform: rotate(-78deg) translateY(-620px) rotate(78deg);
-		}
-	}
-	.wpdev-planet-icon-3 {
-		top: 580px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-5 {
-		from {
-			-webkit-transform: rotate(30deg) translateY(-510px) rotate(-30deg);
-		}
-		to {
-			-webkit-transform: rotate(-76deg) translateY(-530px) rotate(76deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-5 {
-		from {
-			transform: rotate(30deg) translateY(-510px) rotate(-30deg);
-		}
-		to {
-			transform: rotate(-76deg) translateY(-530px) rotate(76deg);
-		}
-	}
-	.wpdev-planet-icon-5 {
-		top: 500px;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-6 {
-		from {
-			-webkit-transform: rotate(-30deg) translateY(-490px) rotate(30deg);
-		}
-		to {
-			-webkit-transform: rotate(83deg) translateY(-620px) rotate(-83deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-6 {
-		from {
-			transform: rotate(-30deg) translateY(-490px) rotate(30deg);
-		}
-		to {
-			transform: rotate(83deg) translateY(-620px) rotate(-83deg);
-		}
-	}
-
-	.wpdev-planet-icon-6 {
-		top: 510px;
-		left: 40%;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-7 {
-		from {
-			-webkit-transform: rotate(-70deg) translateY(-460px) rotate(70deg);
-		}
-		to {
-			-webkit-transform: rotate(74deg) translateY(-400px) rotate(-74deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-7 {
-		from {
-			transform: rotate(-70deg) translateY(-460px) rotate(70deg);
-		}
-		to {
-			transform: rotate(74deg) translateY(-400px) rotate(-74deg);
-		}
-	}
-	.wpdev-planet-icon-7 {
-		top: 404px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-8 {
-		from {
-			-webkit-transform: rotate(-40deg) translateY(-430px) rotate(40deg);
-		}
-		to {
-			-webkit-transform: rotate(74deg) translateY(-410px) rotate(-74deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-8 {
-		from {
-			transform: rotate(-40deg) translateY(-430px) rotate(40deg);
-		}
-		to {
-			transform: rotate(74deg) translateY(-410px) rotate(-74deg);
-		}
-	}
-	.wpdev-planet-icon-8 {
-		top: 410px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-9 {
-		from {
-			-webkit-transform: rotate(60deg) translateY(-410px) rotate(-60deg);
-		}
-		to {
-			-webkit-transform: rotate(-74deg) translateY(-455px) rotate(74deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-9 {
-		from {
-			transform: rotate(60deg) translateY(-410px) rotate(-60deg);
-		}
-		to {
-			transform: rotate(-74deg) translateY(-455px) rotate(74deg);
-		}
-	}
-	.wpdev-planet-icon-9 {
-		top: 405px;
-	}
-}
-@media screen and (max-width: 1300px) {
-	.wpdev-galaxy {
-		height: 612px;
-	}
-	.wpdev-solar-orbit-1 {
-		height: 192%;
-		top: 8%;
-	}
-	.wpdev-solar-orbit-2 {
-		width: 86%;
-		height: 174%;
-		top: 23%;
-		left: 7%;
-	}
-	.wpdev-solar-orbit-3 {
-		width: 72%;
-		top: 39%;
-		left: 14%;
-		height: 144%;
-	}
-	@-webkit-keyframes wpdev-planet-icon-1 {
-		from {
-			-webkit-transform: rotate(-60deg) translateY(-628px) rotate(60deg);
-		}
-		to {
-			-webkit-transform: rotate(76deg) translateY(-592px) rotate(-76deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-1 {
-		from {
-			transform: rotate(-60deg) translateY(-628px) rotate(60deg);
-		}
-		to {
-			transform: rotate(76deg) translateY(-592px) rotate(-76deg);
-		}
-	}
-	.wpdev-planet-icon-1 {
-		top: 594px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-3 {
-		from {
-			-webkit-transform: rotate(60deg) translateY(-594px) rotate(-60deg);
-		}
-		to {
-			-webkit-transform: rotate(-78deg) translateY(-620px) rotate(78deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-3 {
-		from {
-			transform: rotate(60deg) translateY(-594px) rotate(-60deg);
-		}
-		to {
-			transform: rotate(-78deg) translateY(-620px) rotate(78deg);
-		}
-	}
-	.wpdev-planet-icon-3 {
-		top: 590px;
-	}
-	.wpdev-planet-icon-9 {
-		top: 425px;
-	}
-}
-@media screen and (max-width: 1240px) {
+/* @media screen and (max-width: 1280px) {
 	.wpdev-solar-orbit-1 {
 		top: 15%;
 	}
@@ -861,210 +265,7 @@ a.wpdev-hero-btn, a.wpdev-hero-btn:focus, a.wpdev-hero-btn:visited {
 	.wpdev-solar-orbit-3 {
 		top: 42%;
 	}
-}
-@media screen and (max-width: 1200px) {
-	.wpdev-galaxy {
-		height: 550px;
-	}
-	.wpdev-solar-system {
-		width: 950px;
-	}
-	.wpdev-solar-orbit-1 {
-		height: 172%;
-		top: 19%;
-	}
-	.wpdev-solar-orbit-2 {
-		top: 34%;
-		height: 158%;
-		left: 8%;
-		width: 84%;
-	}
-	.wpdev-solar-orbit-3 {
-		width: 66%;
-		top: 50%;
-		left: 17%;
-		height: 130%;
-	}
-	.wpdev-planet-icon {
-		width: 48px;
-		height: 48px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-1 {
-		from {
-			-webkit-transform: rotate(-70deg) translateY(-500px) rotate(70deg);
-		}
-		to {
-			-webkit-transform: rotate(78deg) translateY(-450px) rotate(-78deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-1 {
-		from {
-			transform: rotate(-70deg) translateY(-500px) rotate(70deg);
-		}
-		to {
-			transform: rotate(78deg) translateY(-450px) rotate(-78deg);
-		}
-	}
-	.wpdev-planet-icon-1 {
-		top: 465px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-4 {
-		from {
-			-webkit-transform: rotate(-40deg) translateY(-500px) rotate(40deg);
-		}
-		to {
-			-webkit-transform: rotate(78deg) translateY(-320px) rotate(-78deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-4 {
-		from {
-			transform: rotate(-40deg) translateY(-500px) rotate(40deg);
-		}
-		to {
-			transform: rotate(78deg) translateY(-320px) rotate(-78deg);
-		}
-	}
-	.wpdev-planet-icon-4 {
-		top: 430px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-2 {
-		from {
-			-webkit-transform: rotate(10deg) translateY(-490px) rotate(-10deg);
-		}
-		to {
-			-webkit-transform: rotate(-80deg) translateY(-490px) rotate(80deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-2 {
-		from {
-			transform: rotate(10deg) translateY(-490px) rotate(-10deg);
-		}
-		to {
-			transform: rotate(-80deg) translateY(-490px) rotate(80deg);
-		}
-	}
-	.wpdev-planet-icon-2 {
-		top: 454px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-3 {
-		from {
-			-webkit-transform: rotate(65deg) translateY(-470px) rotate(-65deg);
-		}
-		to {
-			-webkit-transform: rotate(-80deg) translateY(-490px) rotate(80deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-3 {
-		from {
-			transform: rotate(65deg) translateY(-470px) rotate(-65deg);
-		}
-		to {
-			transform: rotate(-80deg) translateY(-490px) rotate(80deg);
-		}
-	}
-	.wpdev-planet-icon-3 {
-		top: 444px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-5 {
-		from {
-			-webkit-transform: rotate(30deg) translateY(-400px) rotate(-30deg);
-		}
-		to {
-			-webkit-transform: rotate(-80deg) translateY(-420px) rotate(80deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-5 {
-		from {
-			transform: rotate(30deg) translateY(-400px) rotate(-30deg);
-		}
-		to {
-			transform: rotate(-80deg) translateY(-420px) rotate(80deg);
-		}
-	}
-	.wpdev-planet-icon-5 {
-		top: 392px;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-6 {
-		from {
-			-webkit-transform: rotate(-30deg) translateY(-490px) rotate(30deg);
-		}
-		to {
-			-webkit-transform: rotate(83deg) translateY(-300px) rotate(-83deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-6 {
-		from {
-			transform: rotate(-30deg) translateY(-490px) rotate(30deg);
-		}
-		to {
-			transform: rotate(83deg) translateY(-620px) rotate(-83deg);
-		}
-	}
-
-	.wpdev-planet-icon-6 {
-		top: 417px;
-		left: 58%;
-	}
-
-	@-webkit-keyframes wpdev-planet-icon-7 {
-		from {
-			-webkit-transform: rotate(-76deg) translateY(-340px) rotate(76deg);
-		}
-		to {
-			-webkit-transform: rotate(74deg) translateY(-290px) rotate(-74deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-7 {
-		from {
-			transform: rotate(-76deg) translateY(-340px) rotate(76deg);
-		}
-		to {
-			transform: rotate(74deg) translateY(-290px) rotate(-74deg);
-		}
-	}
-	.wpdev-planet-icon-7 {
-		top: 310px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-8 {
-		from {
-			-webkit-transform: rotate(-40deg) translateY(-320px) rotate(40deg);
-		}
-		to {
-			-webkit-transform: rotate(76deg) translateY(-290px) rotate(-76deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-8 {
-		from {
-			transform: rotate(-40deg) translateY(-320px) rotate(40deg);
-		}
-		to {
-			transform: rotate(76deg) translateY(-290px) rotate(-76deg);
-		}
-	}
-	.wpdev-planet-icon-8 {
-		top: 298px;
-	}
-	@-webkit-keyframes wpdev-planet-icon-9 {
-		from {
-			-webkit-transform: rotate(70deg) translateY(-270px) rotate(-70deg);
-		}
-		to {
-			-webkit-transform: rotate(-76deg) translateY(-320px) rotate(76deg);
-		}
-	}
-	@-keyframes wpdev-planet-icon-9 {
-		from {
-			transform: rotate(70deg) translateY(-270px) rotate(-70deg);
-		}
-		to {
-			transform: rotate(-76deg) translateY(-320px) rotate(76deg);
-		}
-	}
-	.wpdev-planet-icon-9 {
-		top: 280px;
-	}
-}
+} */
 @media screen and (max-width: 1023px) {
 	.wpdev-solar-orbit{
 		display: none;
@@ -1090,125 +291,4 @@ a.wpdev-hero-btn, a.wpdev-hero-btn:focus, a.wpdev-hero-btn:visited {
 		flex-flow: column;
 		margin: 20px;
 	}
-}/* End custom CSS */
-/* Start custom CSS for image-box, class: .elementor-element-62d4da3 */.marketplace .elementor-image-box-title a {
-    transition: all .5s;
 }
-.marketplace:hover .elementor-image-box-title a {
-    color: #0cb1f9;
-}/* End custom CSS */
-/* Start custom CSS for eael-info-box, class: .elementor-element-155e141 */.elementor-4299 .elementor-element.elementor-element-155e141 img,
-.elementor-4299 .elementor-element.elementor-element-155e141:hover img{
-    border-radius: 10px 10px 0 0!important;
-}
-.elementor-4299 .elementor-element.elementor-element-155e141 .infobox-content .title {
-    position: relative
-}
-.elementor-4299 .elementor-element.elementor-element-155e141 .infobox-content .title:before {
-    content: '';
-    position: absolute;
-    padding: 22px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: #ffffff;
-    border: 1px solid #ebebeb;
-    left: 50%;
-    top: -120px;
-    transform: translateX(-50%);
-    background-image: url('https://assets.wpdeveloper.net/wp-content/uploads/2021/01/ea-1.png');
-    background-size: 55px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}/* End custom CSS */
-/* Start custom CSS for eael-info-box, class: .elementor-element-6d1fd7f */.elementor-4299 .elementor-element.elementor-element-6d1fd7f img,
-.elementor-4299 .elementor-element.elementor-element-6d1fd7f:hover img{
-    border-radius: 10px 10px 0 0!important;
-}
-.elementor-4299 .elementor-element.elementor-element-6d1fd7f .infobox-content .title {
-    position: relative
-}
-.elementor-4299 .elementor-element.elementor-element-6d1fd7f .infobox-content .title:before {
-    content: '';
-    position: absolute;
-    padding: 22px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: #ffffff;
-    border: 1px solid #ebebeb;
-    left: 50%;
-    top: -120px;
-    transform: translateX(-50%);
-    background-image: url('https://assets.wpdeveloper.net/wp-content/uploads/2021/01/templately-1.png');
-    background-size: 55px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}/* End custom CSS */
-/* Start custom CSS for section, class: .elementor-element-0f140ec */.wpdev-shape {
-    position: relative
-}
-
-.wpdev-shape:before {
-    content: '';
-    position: absolute;
-    top:0;
-    left: -10%;
-    height: 100%; 
-    width: 99%;
-    background: #0A0C40;
-    border-radius: 0 50px 50px 0;
-    transform: skew(10deg);
-}
-
-.wpdev-shape.right:before {
-    right: -10%;
-    left: auto;
-    border-radius: 50px 0 0 50px;
-    transform: skew(-10deg);
-}
-
-.wpdev-shape.bg-grey:before {
-    background: #f8faff;
-}
-
-@media (max-width: 1440px) {
-    .wpdev-shape:before {
-        left: -4%;
-    }
-}
-
-@media (max-width: 768px) {
-    .wpdev-shape:before, .wpdev-shape.right:before {
-        left: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 0;
-        transform: skew(0deg);
-    }
-}/* End custom CSS */
-/* Start custom CSS for eael-info-box, class: .elementor-element-e9e9772 */.elementor-4299 .elementor-element.elementor-element-e9e9772 img,
-.elementor-4299 .elementor-element.elementor-element-e9e9772:hover img{
-    border-radius: 10px 10px 0 0!important;
-}
-.elementor-4299 .elementor-element.elementor-element-e9e9772 .infobox-content .title {
-    position: relative
-}
-.elementor-4299 .elementor-element.elementor-element-e9e9772 .infobox-content .title:before {
-    content: '';
-    position: absolute;
-    padding: 22px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: #ffffff;
-    border: 1px solid #ebebeb;
-    left: 50%;
-    top: -120px;
-    transform: translateX(-50%);
-    background-image: url('https://assets.wpdeveloper.net/wp-content/uploads/2021/01/NX-2.png');
-    background-size: 55px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}/* End custom CSS */
-/* Start custom CSS for eael-info-box, class: .elementor-element-476d779 */

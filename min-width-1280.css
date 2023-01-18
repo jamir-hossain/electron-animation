@@ -1,0 +1,99 @@
+@media screen and (max-width: 1280px) {
+	.wpdev-galaxy {
+		height: 600px;
+	}
+	/* .wpdev-solar-system {
+		width: 1200px;
+	} */
+
+	.wpdev-solar-orbit-1 {
+		width: 1400px;
+		height: 165%;
+	}
+	.wpdev-solar-orbit-2 {
+		width: 1300px;
+		height: 165%;
+	}
+	.wpdev-solar-orbit-3 {
+		width: 1200px;
+		height: 162%;
+	}
+	
+
+	@-webkit-keyframes wpdev-planet-icon-1 {
+		from {
+			-webkit-transform: rotate(-36deg) translateY(-880px) rotate(36deg);
+		}
+		to {
+			-webkit-transform: rotate(36deg) translateY(-830px) rotate(-36deg);
+		}
+	}
+	@-webkit-keyframes wpdev-planet-icon-2 {
+		from {
+			-webkit-transform: rotate(20deg) translateY(-820px) rotate(-20deg);
+		}
+		to {
+			-webkit-transform: rotate(-30deg) translateY(-870px) rotate(30deg);
+		}
+	}
+	@-webkit-keyframes wpdev-planet-icon-3 {
+		from {
+			-webkit-transform: rotate(40deg) translateY(-830px) rotate(-40deg);
+		}
+		to {
+			-webkit-transform: rotate(-20deg) translateY(-850px) rotate(20deg);
+		}
+	}
+
+
+	@-webkit-keyframes wpdev-planet-icon-4 {
+		from {
+			-webkit-transform: rotate(-35deg) translateY(-860px) rotate(35deg);
+		}
+		to {
+			-webkit-transform: rotate(50deg) translateY(-700px) rotate(-50deg);
+		}
+	}
+	@-webkit-keyframes wpdev-planet-icon-5 {
+		from {
+			-webkit-transform: rotate(40deg) translateY(-730px) rotate(-40deg);
+		}
+		to {
+			-webkit-transform: rotate(-35deg) translateY(-760px) rotate(35deg);
+		}
+	}
+	@-webkit-keyframes wpdev-planet-icon-6 {
+		from {
+			-webkit-transform: rotate(-30deg) translateY(-680px) rotate(30deg);
+		}
+		to {
+			-webkit-transform: rotate(28deg) translateY(-880px) rotate(-28deg);
+		}
+	}
+
+
+	@-webkit-keyframes wpdev-planet-icon-7 {
+		from {
+			-webkit-transform: rotate(-54deg) translateY(-680px) rotate(54deg);
+		}
+		to {
+			-webkit-transform: rotate(54deg) translateY(-620px) rotate(-54deg);
+		}
+	}
+	@-webkit-keyframes wpdev-planet-icon-8 {
+		from {
+			-webkit-transform: rotate(-40deg) translateY(-700px) rotate(40deg);
+		}
+		to {
+			-webkit-transform: rotate(48deg) translateY(-660px) rotate(-48deg);
+		}
+	}
+	@-webkit-keyframes wpdev-planet-icon-9 {
+		from {
+			-webkit-transform: rotate(50deg) translateY(-660px) rotate(-50deg);
+		}
+		to {
+			-webkit-transform: rotate(-50deg) translateY(-700px) rotate(50deg);
+		}
+	}
+}

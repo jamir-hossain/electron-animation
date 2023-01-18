@@ -1,0 +1,30 @@
+@media screen and (min-width: 1921px) {
+	.wpdev-galaxy {
+		height: 970px;
+	}
+
+	@-webkit-keyframes wpdev-planet-icon-1 {
+		from {
+			-webkit-transform: rotate(-70deg) translateY(-800px) rotate(70deg);
+		}
+		to {
+			-webkit-transform: rotate(84deg) translateY(-820px) rotate(-84deg);
+		}
+	}
+	.wpdev-planet-icon-1 {
+		left: 48%;
+	}
+
+	@-webkit-keyframes wpdev-planet-icon-3 {
+		from {
+			-webkit-transform: rotate(70deg) translateY(-750px) rotate(-70deg);
+		}
+		to {
+			-webkit-transform: rotate(-83deg) translateY(-850px) rotate(83deg);
+		}
+	}
+	.wpdev-planet-icon-3 {
+		top: 768px;
+		left: 52%;
+	}
+}
